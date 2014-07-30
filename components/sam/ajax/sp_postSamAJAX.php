@@ -97,7 +97,7 @@ if (!class_exists("sp_postSamAJAX")) {
 
         /**
          * Create a .mp4 out of the saved image, then destroys the images?
-         */
+         
         function downloadSamMov(){
             $nonce = $_POST['nonce'];
             if( !wp_verify_nonce($nonce, 'sp_nonce') ){
@@ -179,7 +179,7 @@ if (!class_exists("sp_postSamAJAX")) {
             }
             exit;
         }
-
+*/
         /**
          * Saves the content of a Sam component.
          */
