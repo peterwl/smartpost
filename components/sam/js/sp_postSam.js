@@ -373,7 +373,7 @@
                     },
                     error : function(jqXHR, statusText, errorThrown){
                         if(smartpost.sp_postComponent){
-                            smartpost.sp_postComponent.showError( errorThrown );
+                            //smartpost.sp_postComponent.showError( errorThrown );
                         }
                     }
                 });
