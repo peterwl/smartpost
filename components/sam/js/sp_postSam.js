@@ -338,7 +338,7 @@
                     playing = false;
                 }
             });
-             function resetFrames(){
+             function undoFrames(){
                 playing = false;
                 frames.pop(frames.length);
                 submittedFrames = frames.length-1;
@@ -346,19 +346,19 @@
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
             }
             
-            /*
+            
              function resetFrames(){
                 playing = false;
-                //frames = [];
+                frames = [];
                 submittedFrames = 0;
                 framesIndicator.innerText = "0/"+String(maxFrames);
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
             }
-*/
+
 
             //clear all frames and images taken so far
             redoButton.click(function(){
-                resetFrames();
+                undoFrames();
                 var compID = $(this).data('compid');
                 $.ajax({
                     url  : SP_AJAX_URL,
