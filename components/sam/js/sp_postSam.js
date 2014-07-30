@@ -372,7 +372,7 @@
                         console.log( data );
                     },
                     error : function(jqXHR, statusText, errorThrown){
-                        if(smartpost.sp_postComponent){
+                        //if(smartpost.sp_postComponent){
                             //smartpost.sp_postComponent.showError( errorThrown );
                         }
                     }
