@@ -52,7 +52,7 @@ if (!class_exists("sp_postSamAJAX")) {
                        //exit();
                     }
                 
-                $samComponent->imgs = array();
+                $samComponent->imgs = array($imgs);
                 $samComponent->update();
             
             echo json_encode( array( 'success' => true ) );
