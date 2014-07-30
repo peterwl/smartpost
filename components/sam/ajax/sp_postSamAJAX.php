@@ -44,7 +44,7 @@ if (!class_exists("sp_postSamAJAX")) {
                     echo $imgs;
                     foreach( $imgs as $img ){
                 	 //if( file_exists( $img) ){
-                	 	if ($img == end($imgs)) {
+                	 	if ($img === end($imgs)) {
                 	 		unlink( $img );
                 	 	}
                        // array_pop($imgs);
