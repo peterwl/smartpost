@@ -437,9 +437,9 @@
                         }
                     }
                 });
-            },
-            
-    };
+            });
+        },
+
         /**
          * Statically initializes all media components on document.ready
          */
@@ -447,8 +447,8 @@
             this.setTypeID();
             this.downloadSamMov( $('.download-sam-movie-button') );
         }
-    
-};
+    };
+
     $(document).ready(function(){
         smartpost.sp_postSam.init();
     });
