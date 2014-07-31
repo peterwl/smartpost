@@ -101,8 +101,8 @@
                 parent = self.parents( '.sp_sam' ),
                 samContainer = self.find( '.samContainer' ),
                 frames = [],    // hold frames (ImageData) in browser for later saving
-                fps = 5,        // maybe add ability for user to adjust this
-                maxFrames = 42, // this should be option to set in backend
+                fps = 10,        // maybe add ability for user to adjust this
+                maxFrames = 60, // this should be option to set in backend
                 playing = false,
                 showOverlay = true,
                 width = 440,
