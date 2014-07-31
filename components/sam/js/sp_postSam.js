@@ -437,9 +437,27 @@
                         }
                     }
                 });
+                $.ajax({
+                    url : SP_AJAX_URL,
+                    type : 'POST',
+                    data : {
+                        action : 'saveSamDescAJAX'
+                        nonce : SP_NONCE,
+                        compID: compID,
+                        postID: postID,
+                    }
+                    datatype: 'json'
+                    success: function(data) {
+                        console.log(data);
+                    }
+                    error : function(jqXHR, statusText, errorThrown){
+                        if(smartpost.sp_postComponent){
+                            smartpost.sp_postComponent.showError( errorThrown );
+                        }
+                   }
             });
-        },
-
+        }),
+    };
         /**
          * Statically initializes all media components on document.ready
          */
@@ -447,7 +465,7 @@
             this.setTypeID();
             this.downloadSamMov( $('.download-sam-movie-button') );
         }
-    };
+    
 
     $(document).ready(function(){
         smartpost.sp_postSam.init();
