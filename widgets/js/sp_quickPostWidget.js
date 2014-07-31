@@ -155,8 +155,11 @@
 
             // Publish post click handler
             $( '.sp-qp-publish-post' ).click(function(){
+                var x = confirm ( "Did you click the Save SAM Movie Button??")
+                if (x == true){
                 var widgetID = $(this).data('widgetid');
                 self.publishSPPost( widgetID );
+                }
             });
 
             // Cancel post click handler
