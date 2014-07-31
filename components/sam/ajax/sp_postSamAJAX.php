@@ -232,7 +232,7 @@ if (!class_exists("sp_postSamAJAX")) {
             $filename = $uploads['path'] . '/' . $idString . 'img' . $frameString . '.png';
 
             // create a png image at location
-            $conv = imagepng($img, $filename, 0);
+            $conv = imagepng($im, $filename, 0);
 
             // get images this component already has
             $imgs = $SamComp->getImgs();
