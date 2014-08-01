@@ -343,6 +343,7 @@
                 frames.pop();
                 submittedFrames = frames.length;
                 framesIndicator.innerText = String(frames.length) + "/" +String(maxFrames);
+                framesIndicator.textContent = String(frames.length) + "/" +String(maxFrames);
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
             }
             
