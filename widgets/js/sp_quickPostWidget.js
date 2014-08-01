@@ -155,7 +155,7 @@
 
             // Publish post click handler
             $( '.sp-qp-publish-post' ).click(function(){
-                var x = confirm ( "Did you click the Save SAM Movie Button??")
+                var x = confirm ( "Did you click the Save SAM Movie Button?? If you haven't press cancel or the video won't save!")
                 if (x == true){
                 var widgetID = $(this).data('widgetid');
                 self.publishSPPost( widgetID );
