@@ -340,8 +340,8 @@
             });
              function undoFrames(){
                 playing = false;
-                frames.pop(frames.length);
-                submittedFrames = frames.length-1;
+                frames.pop();
+                submittedFrames = frames.length;
                 framesIndicator.innerText = String(frames.length) + "/" +String(maxFrames);
                 overlay.getContext("2d").clearRect( 0, 0, width, height );
             }
