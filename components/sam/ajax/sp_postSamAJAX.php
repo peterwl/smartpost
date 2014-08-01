@@ -153,7 +153,7 @@ if (!class_exists("sp_postSamAJAX")) {
                         exit;
                     }
 
-                    if( file_exists( $sam_mov_name . '.mp4' ) ){;
+                    if( file_exists( $sam_mov_name . '.mp4' ) ){
                     	 
                     	 // Make the first image the featured image if one isn't set already
  +                        if( !has_post_thumbnail( $samComponent->getPostID() ) ){
@@ -171,6 +171,7 @@ if (!class_exists("sp_postSamAJAX")) {
                                 unlink($img);
                             }
                         }
+                        
                         $samComponent->imgs = array();
                         $samComponent->movie = $sam_mov_name . '.mp4';
 
