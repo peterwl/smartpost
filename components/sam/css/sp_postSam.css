@@ -8,7 +8,7 @@
 .samContainer {
     width: 440px;
     border-spacing: 0px;
-    border: none;
+    border: 1px;
 }
 
 .samContainer:after {
@@ -51,13 +51,13 @@
 }
 
 .samEmptyVideo span {
+    position: relative;	
     vertical-align: middle;
     display: table-cell;
 }
 
 .samVideoContainer {
     position: relative;
-    left: 100px;
     width: 440px;
     height: 330px;
 }
