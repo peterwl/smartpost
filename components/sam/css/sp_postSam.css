@@ -57,6 +57,7 @@
 
 .samVideoContainer {
     position: relative;
+    left: 100px;
     width: 440px;
     height: 330px;
 }
