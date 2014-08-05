@@ -68,7 +68,7 @@
 }
 
 .samVideoContainer td * {
-    margin-right: -100px;
+    position: absolute;
 }
 
 #samFrameControls{
