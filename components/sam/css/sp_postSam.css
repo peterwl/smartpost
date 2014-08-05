@@ -38,8 +38,6 @@
 .samContainer td{
     padding: 0px;
     border: 0px;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 .samEmptyVideo {
@@ -70,7 +68,7 @@
 }
 
 .samVideoContainer td * {
-    margin-left: auto;
+    margin-left: 300px;
     margin-right: auto;
 }
 
