@@ -47,7 +47,7 @@ if (!class_exists("sp_postSam")) {
                 $html .= '<p style="text-align: center;"><b>Note:</b> You have a previously saved SAM movie, <a href="' . get_permalink( $this->postID ) . '">click here</a> to view it!</p>';
             }
 
-            $html .= '<table id="samContainer-'. $this->ID .'" class="samContainer" cellpadding="0" margin-left="100px">';
+            $html .= '<table id="samContainer-'. $this->ID .'" class="samContainer" cellpadding="0" style="width: 440px; max-width: 100%; margin-right: auto; margin-left: auto;">;
                 $html .= '<tr id="samVideoContainer-'. $this->ID .'" class="samVideoContainer">';
                     $html .= '<td style="padding:0px">';
                             $html .= '<div id="samEmptyVideo-'. $this->ID .'" class="samEmptyVideo">';
