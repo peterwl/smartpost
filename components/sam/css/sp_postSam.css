@@ -53,7 +53,6 @@
 .samEmptyVideo span {
     vertical-align: middle;
     display: table-cell;
-    position: absolute;
 }
 
 .samVideoContainer {
