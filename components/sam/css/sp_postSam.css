@@ -8,7 +8,7 @@
 .samContainer {
     width: 440px;
     border-spacing: 0px;
-    border: 1px;
+    border: none;
 }
 
 .samContainer:after {
@@ -37,7 +37,7 @@
 
 .samContainer td{
     padding: 0px;
-    border: 1px;
+    border: 0px;
 }
 
 .samEmptyVideo {
@@ -52,7 +52,7 @@
 
 .samEmptyVideo span {
     vertical-align: middle;
-    display: table-cell;
+    display: table-cell
 }
 
 .samVideoContainer {
@@ -68,7 +68,8 @@
 }
 
 .samVideoContainer td * {
-    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #samFrameControls{
